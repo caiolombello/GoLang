@@ -4,17 +4,21 @@ import (
 	"fmt"
 )
 
+// Package Level: Scope
+var y = "Hello, World!"
+
 func main() {
 
+	// Package Level: Code Block
 	// Declaração
 	x := 10
-	y := "Hello, World!"
 
 	// Tipagem automática
 	fmt.Printf("x: %v, %T\n", x, x)
 	fmt.Printf("y: %v, %T\n", y, y)
 
 	// Atribuição
-	x = 20
+	x, z := 20, 30
 	fmt.Printf("x: %v, %T\n", x, x)
+	fmt.Printf("z: %v, %T\n", z, z)
 }
