@@ -24,5 +24,5 @@ func main() {
 	// Atribuição
 	z = 10
 	fmt.Printf("z: %v, %T\n", z, z)
-
+	
 }
